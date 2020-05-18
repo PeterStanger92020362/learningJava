@@ -14,6 +14,8 @@ import java.awt.Color;
 public class Main {
     
     public static void main(String[] args) {
+       
+       //creating Car objects 
         
        Car myCar = new Car(25.5,"1BC32E",Color.BLUE,true);
        
@@ -26,6 +28,19 @@ public class Main {
        myCar.changePaintColor(Color.RED);
        System.out.println(myCar.paintColor);
        
+       
+       
+       String userInput = "entertainment";
+       String uppercased = userInput.toUpperCase();
+
+       System.out.println(userInput);
+       System.out.println(uppercased);
+       
+       char firstCharacter = userInput.charAt(0);
+       System.out.println(firstCharacter);
+       
+       System.out.println("Contains: " + 
+               userInput.contains("Enter".toLowerCase()));
        
        
     }
