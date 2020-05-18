@@ -1,6 +1,8 @@
 
 import java.awt.Color;
 import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -34,12 +36,13 @@ public class Main {
        */
        //System.out.println("Enter a word:");
        
-       
+       /*
        Scanner sc = new Scanner(System.in);
        int userNumber = sc.nextInt();
        System.out.println(userNumber);
        double userNumber2 = sc.nextDouble();
        System.out.println(userNumber2);
+       */
        
        /*
        String userInput = sc.next();
@@ -55,6 +58,22 @@ public class Main {
                userInput.contains("Enter".toLowerCase()));
        
        */
+       
+       // 31, 45, 22, 98, 10
+       int[] numbers = new int[5];
+       
+       
+       int[] numbers2 = {31, 45, 22, 98 ,10};
+       Arrays.sort(numbers2);
+       System.out.println(Arrays.toString(numbers2));
+       
+       String[] myFavoriteCandyBars = {"Twix", "Hershey's", "Crunch"};
+       System.out.println("Index 1: " + myFavoriteCandyBars[1]);
+       myFavoriteCandyBars[2] = "Butterfinger";
+       System.out.println("Index 2: " + myFavoriteCandyBars[2]);
+       System.out.println("Length: " + myFavoriteCandyBars.length);
+       
+       System.out.println(Array.get(myFavoriteCandyBars, 2));
        
     }
 }
