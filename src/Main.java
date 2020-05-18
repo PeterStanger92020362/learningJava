@@ -18,10 +18,6 @@ public class Main {
     
     public static void main(String[] args) {
        
-       //creating Car objects 
-       
-       /*
-       
        Car myCar = new Car(25.5,"1BC32E",Color.BLUE,true);
        
        Car sallyCar = new Car(13.9, "3D20BN",Color.BLACK,false);
@@ -33,7 +29,11 @@ public class Main {
        myCar.changePaintColor(Color.RED);
        System.out.println(myCar.paintColor);
        
-       */
+       
+       double myCarSpeed = 50;
+       myCarSpeed = myCar.speedingUp(myCarSpeed);
+       System.out.println(myCarSpeed);
+          
        //System.out.println("Enter a word:");
        
        /*
@@ -58,7 +58,7 @@ public class Main {
                userInput.contains("Enter".toLowerCase()));
        
        */
-       
+       /*
        // 31, 45, 22, 98, 10
        int[] numbers = new int[5];
        
@@ -74,6 +74,6 @@ public class Main {
        System.out.println("Length: " + myFavoriteCandyBars.length);
        
        System.out.println(Array.get(myFavoriteCandyBars, 2));
-       
+       */
     }
 }
