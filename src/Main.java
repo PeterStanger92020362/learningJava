@@ -1,5 +1,6 @@
 
 import java.awt.Color;
+import java.util.Scanner;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,7 +17,9 @@ public class Main {
     public static void main(String[] args) {
        
        //creating Car objects 
-        
+       
+       /*
+       
        Car myCar = new Car(25.5,"1BC32E",Color.BLUE,true);
        
        Car sallyCar = new Car(13.9, "3D20BN",Color.BLACK,false);
@@ -28,9 +31,18 @@ public class Main {
        myCar.changePaintColor(Color.RED);
        System.out.println(myCar.paintColor);
        
+       */
+       //System.out.println("Enter a word:");
        
        
-       String userInput = "entertainment";
+       Scanner sc = new Scanner(System.in);
+       int userNumber = sc.nextInt();
+       System.out.println(userNumber);
+       double userNumber2 = sc.nextDouble();
+       System.out.println(userNumber2);
+       
+       /*
+       String userInput = sc.next();
        String uppercased = userInput.toUpperCase();
 
        System.out.println(userInput);
@@ -42,6 +54,7 @@ public class Main {
        System.out.println("Contains: " + 
                userInput.contains("Enter".toLowerCase()));
        
+       */
        
     }
 }
