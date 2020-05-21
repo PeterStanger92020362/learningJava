@@ -18,6 +18,7 @@ public class Main {
     
     public static void main(String[] args) {
        
+        /*
        Car myCar = new Car(25.5,"1BC32E",Color.BLUE,true);
        
        Car sallyCar = new Car(13.9, "3D20BN",Color.BLACK,false);
@@ -33,7 +34,8 @@ public class Main {
        double myCarSpeed = 50;
        myCarSpeed = myCar.speedingUp(myCarSpeed);
        System.out.println(myCarSpeed);
-          
+       */   
+        
        //System.out.println("Enter a word:");
        
        /*
@@ -75,5 +77,41 @@ public class Main {
        
        System.out.println(Array.get(myFavoriteCandyBars, 2));
        */
+       
+       /*
+       String s = "dog";
+       String replacedF = s.replace("d","f");
+       System.out.println(replacedF);
+       */
+       
+       // Challenge: Create a Blueprint and an Instance
+       /*
+       Dog rover = new Dog(4,"Rover","Brown");
+       System.out.println(rover.bark("the cat!"));
+       
+       System.out.println(rover.getsOlder(3));
+       
+       System.out.println(rover.changesColor("purple"));
+       */
+       
+       
+       System.out.println("Enter an age:");
+       Scanner in = new Scanner(System.in);
+       int age = in.nextInt();
+       
+       if (age >= 0 && age <= 5) {
+           System.out.println("Baby");
+       } else if (age >= 6 && age <= 11) {
+           System.out.println("Kid");
+       } else if (age >= 12 && age <= 17) {
+           System.out.println("Teen");
+       } else if (age >= 18) {
+           System.out.println("Adult");
+       } else {
+           System.out.println("Invalid");
+       }
+       
+       System.out.println("Thanks for using this program!");
+       
     }
 }
