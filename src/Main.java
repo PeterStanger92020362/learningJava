@@ -117,6 +117,8 @@ public class Main {
        System.out.println("Thanks for using this program!");
        */
        
+       // Using libraries
+       /*
        double power = Math.pow(5, 3);
        System.out.println(power);
        
@@ -128,6 +130,17 @@ public class Main {
        int randomNumberWithBound = rand.nextInt(10);
        System.out.println(randomNumber);
        System.out.println(randomNumberWithBound);
+       */
+       
+       //Debugging with Print Statements
+       
+       Coin c = new Coin();
+       System.out.println("Initial: " + c.getFaceUp());
+       
+       for(int i=0; i<10; i++) {
+           c.flip();
+           System.out.println("After Flip: " + c.getFaceUp());
+       }
        
     }
 }
