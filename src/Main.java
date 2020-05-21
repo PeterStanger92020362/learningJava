@@ -133,7 +133,7 @@ public class Main {
        */
        
        //Debugging with Print Statements
-       
+       /*
        Coin c = new Coin();
        System.out.println("Initial: " + c.getFaceUp());
        
@@ -141,6 +141,29 @@ public class Main {
            c.flip();
            System.out.println("After Flip: " + c.getFaceUp());
        }
+       */
+       
+       Dice d = new Dice();
+       System.out.println("The initial face of the die is " + d.faceUp);
+       
+       System.out.println("Enter a command: ");
+       Scanner in = new Scanner(System.in);
+       String command = in.nextLine();
+       
+       if (command.equals("roll")) {
+           System.out.println("You rolled two dice!");
+           int firstRoll = d.roll();
+           int secondRoll = d.roll();
+           
+           System.out.println("");
+           System.out.println("The first die result was a " + firstRoll);
+           System.out.println("The second die result was a " + secondRoll);
+           System.out.println("The sum of the two rolls is " + (firstRoll + secondRoll));
+           
+       } else {
+           System.out.println("Invalid command");
+       }
+       
        
     }
 }
